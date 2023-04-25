@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tratando dados numéricos</title>
+</head>
+<body>
+    <script>
+        var n = 1543.5
+        alert(n)
+        alert(n.toFixed(2))
+        alert(n.toFixed(2).replace('.',','))
+        alert(n.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))
+        alert(n.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}))
+        alert(n.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}))
+    </script>
+    
+</body>
+</html>

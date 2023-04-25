@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array com loop</title>
+</head>
+
+<body>
+    <header>
+        <h1>Gerador de Vetor</h1>
+    </header>
+        <script>
+            let vetor = []
+            let pos = prompt('Digite quantas posições deseja ter em seu vetor: ')
+            let c = 0
+            while (c < pos) {
+               let valor = prompt('Insira um valor: ')
+                vetor.push(valor)
+                c++
+            }
+            alert(`Seu vetor tem um total de ${vetor.length} posições`)
+            alert(`Seu array ficou: ${vetor}`)
+            alert(`Seu array ao cotrário: ${vetor.reverse()}`)
+        </script>
+</body>
+
+</html>

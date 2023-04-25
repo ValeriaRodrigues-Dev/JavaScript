@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        body{background-color: rgba(23, 113, 135, 0.95);
+        color: white;
+        font: normal 18pt arial;
+    }
+    </style>
+</head>
+<body>
+    <!-- 
+      DOM- DOCUMENT OBJECT MODEL(Modelo de Documento por Objetos) 
+      =>  CONJUNTO DE OBJETOS DENTO DO NAVEGADOR QUE VAI DAR ACESSO AOS COMPONENTES INTERNOS DO NAVEGADOR
+     - Window (janela) dentro => (location / document -> dentro=> (html / head -> dentro => (meta / tile / body -> dentro=> (h1/ p / p -> dentro=> strong /  div ) / history)                                       
+    -->
+    <h1>iniciando os estudos <strong>DOM</strong></h1>
+    <p>aqui vai o resultado</p>
+    <p>aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">clique em mim</div>
+    <div name="mensagem"> aqui temos o segundo teste</div>
+    <div id="teste"> agr com o seletor</div>    
+    <script>
+        window.document.write(window.document.URL)
+     var p1= window.document.getElementsByTagName('p') [0]
+     window.document.write('Está escrito assim: ' + p1.innerText)
+     var p2= window.document.getElementsByTagName('p') [1]
+     window.document.write('Está escrito assim: ' + p2.innerHTML)
+     var d = window.document.getElementById('msg')
+     d.style.background = 'green' 
+     var teste = document.getElementsByName('mensagem') [0]
+     teste.innerText='olá'
+     var seletor = document.querySelector('div#teste')
+     seletor.style.background='blue'
+
+    </script>
+   <!-- 
+     Posso selecionar os elementos e navegar dentro da minha arvore DOM por:
+     - Marca=> getElementsByTagName()
+     - id=> getElementById()
+     - nome=> getElementsByName()
+     - classe=> getElementsByClassName()
+     - seletor=> querySelector()/querySelectorAll()
+     = quando for element(S) usa o [] para determinar qual elemento deseja(quando tem mais de 1 do mesmo)
+    -->
+
+</body>
+</html>

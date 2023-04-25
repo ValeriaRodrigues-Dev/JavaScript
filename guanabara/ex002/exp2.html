@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USANDO VARIÁVEIS númericas</title>
+    <style>
+        body {
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        /* Fazendo
+             var n1 = prompt('Digite um número: ') //string
+             var n2 = prompt('Digite outro número: ') //string  
+         É necessário fazer a conversão de string para número:
+          - Number.parseInt
+          - Number.parseFloat  
+          - Number(n) -> o JS identifica o tipo  
+             var s = n1 + n2 = dessa forma ele retorna como uma concatenação
+             alert('a soma desses números é: ' + s) 
+         O + da efeito:
+         Concatenação -> (string + string)
+         Adição -> (number + number) 
+         Dessa forma a maneira certa para obter o resultado desejado é:
+        Outra conversão é de string:
+        String(n) ou n.toString()
+        EX: ALERT('A SOMA É' + String(s))   
+         */
+        var n1 = Number.parseInt(window.prompt('Digite um número: '))
+        var n2 = parseInt(prompt('Digite outro número: '))
+        var n3 = Number(prompt('Digite outro número: '))
+        //usando int a conta se limita a apenas n° int nos dois primeiros n
+        var s = n1 + n2 + n3
+        alert('a soma desses números é: ' + s)
+        /* var s ='JavaScript'
+        'eu estou aprendendo s' = não faz interpolação
+        'eu estou aprendendo ' + s = faz a concatenação
+        'eu estou aprendendo' ${s} = usa template string
+         */
+    </script>
+
+</body>
+
+</html>

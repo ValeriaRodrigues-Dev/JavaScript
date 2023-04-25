@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+</head>
+<body>
+    <header>
+        <h1>Será que funciona?</h1>
+        <h2>Gerador de Array</h2>
+    </header>
+  <div>
+      Entre com um número:<input type="number" name="num" id="num0"><br><br>
+      Entre com um número:<input type="number" name="num" id="num1"><br><br>
+      Entre com um número:<input type="number" name="num" id="num2"><br>
+      <input type="button" value="Gerar" onclick="array()"> 
+  </div>
+  <div id="saida" ></div>
+
+</body>
+<script>
+  let num = document.getElementById('num0')
+  let num1 = document.getElementById('num1')
+  let num2 = document.getElementById('num2')
+  let saida = document.querySelector('div#saida')
+
+  function array(){
+    n = Number(num.value)
+    n1 = Number(num1.value)
+    n2 = Number(num2.value)
+    let array = [n,n1,n2]
+    saida.innerHTML=''
+    saida.innerHTML=`${array.reverse()}`
+    
+  }
+</script>
+
+</html>
