@@ -1,2 +1,5 @@
-# JS
- Curso Guanabara JavaScript
+# JavaScript
+ Curso JavaScript
+ 
+ - Guanabara
+ - Udemy
